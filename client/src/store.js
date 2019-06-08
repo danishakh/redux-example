@@ -15,7 +15,7 @@ const middleware = [thunk];
 // 1. rootReducer -  which has the list of all our reducers based on our resources. eg: postReducer/authReducer/todoReducer
 //    Combine all of them to a rootReducer which is passed to the store
 // 2. initial state -  of the application
-// 3. enhancer - functions we want to include
+// 3. enhancer - functions we want to include such as middleware
 const store = createStore(
     rootReducer, 
     initialState, 

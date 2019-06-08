@@ -1,5 +1,8 @@
-// rootReducer - combine all our reducers
+// rootReducer
+
+// combine all our reducers
 import { combineReducers } from 'redux';
+
 import postReducer from './postReducer';
 
 export default combineReducers({
