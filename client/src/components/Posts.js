@@ -5,7 +5,7 @@ import { fetchPosts } from '../actions/postActions';
 class Posts extends Component {
 
     // ============================
-    // DON'T NEED THIS SHIT ANYMORE AS WE ARE DON'T NEED STATE - POST IS COMING FROM REDUX, FROM THE APP STATE IN THE STORE
+    // DON'T NEED THIS SHIT ANYMORE AS WE ARE DON'T NEED STATE - POSTS ARE COMING FROM REDUX, FROM THE APP STATE IN THE STORE
     // ============================
 
     // constructor(props) {
