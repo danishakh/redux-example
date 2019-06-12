@@ -8,7 +8,8 @@ const initialState = {
     item: {}
 }
 
-// evaluates what action type we are dealing with and
+// evaluates the initial state and what action type we are dealing with
+// action refers to the dispatch
 export default function(state=initialState, action){
     switch(action.type) {
         case FETCH_POSTS:
