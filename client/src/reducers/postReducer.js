@@ -1,7 +1,7 @@
 // Evaluate any actions that are committed - (fetching posts/creating new posts)
 import { FETCH_POSTS, NEW_POST } from '../actions/types';
 
-// Items: posts that come in from our action, where we have our fetch request
+// Items: all posts that come in from our action, where we have our fetch request
 // Item: represent the new post we add
 const initialState = {
     items: [],
