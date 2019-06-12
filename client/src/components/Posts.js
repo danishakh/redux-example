@@ -79,4 +79,4 @@ const mapStateToProps = state => ({
 //export default connect(null, { fetchPosts })(Posts);
 
 // Once we created mapStateToProps() we need to pass it in our connect()
-export default connect(mapStateToProps, { fetchPosts})(Posts);
+export default connect(mapStateToProps, { fetchPosts })(Posts);

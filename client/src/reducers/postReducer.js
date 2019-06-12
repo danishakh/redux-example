@@ -9,7 +9,7 @@ const initialState = {
 }
 
 // evaluates the initial state and what action type we are dealing with
-// action refers to the dispatch
+// action refers to the dispatched action from 'postActions'
 export default function(state=initialState, action){
     switch(action.type) {
         case FETCH_POSTS:
