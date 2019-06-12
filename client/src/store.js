@@ -1,6 +1,6 @@
 // separate store file to take care of all store functions
 
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
@@ -18,8 +18,11 @@ const middleware = [thunk];
 // 3. enhancer - functions we want to include such as middleware
 const store = createStore(
     rootReducer, 
-    initialState, 
-    applyMiddleware(...middleware)
+    initialState,
+    compose(                // this will take care of our multiple enhancers
+        applyMiddleware(...middleware),
+        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()    // Chrome Redux Extension
+    )
 );
 
 export default store;
