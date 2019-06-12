@@ -16,3 +16,21 @@ export const fetchPosts = () => dispatch => {
         }));
     //}
 }
+
+export const createPost = (postData) => dispatch => {
+    
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify(postData),
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
+        .then(res => res.json())
+        
+        // dispatch the new post to our reducer
+        .then(newPost => dispatch({
+            type: NEW_POST,
+            payload: newPost
+        }));
+}
