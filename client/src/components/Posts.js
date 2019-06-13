@@ -66,7 +66,7 @@ Posts.propTypes = {
 }
 
 
-// Get the new 'posts' from state - get the state from redux and map it to props of our component
+// Get all 'posts' from state - get the state from redux and map it to props of our component
 // This should give our component a 'this.props.posts' to work with
 const mapStateToProps = state => ({
     posts: state.posts.items,       // 'state.posts' maps to the 'posts' in our rootReducer
