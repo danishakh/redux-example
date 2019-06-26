@@ -21,3 +21,6 @@ The problem is that if we have a large application with a lot of different compo
 - **Action Creators:** Dispatches an action to the store when the user fires an action/action creator by clicking a button/submitting a form/etc in the View. 
 - **Reducers:** Pure functions that specify how the application state should change based in response to that action. Reducers respond with the new state. (Remember state is immutable, it is not modified but instead re-created)
  
+ 
+
+ ### Big thanks to Traversy Media for the [video tutorial](https://www.youtube.com/watch?v=93p3LxR9xfM)
